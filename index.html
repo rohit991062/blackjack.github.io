@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Blackjack</h1>
+        <button id="rules-btn" onclick="toggleRules()">?</button>
+        <p id="message-el">Want to play a round?</p>
+        <div id="cards-container">
+            <p id="cards-el">Cards:</p>
+        </div>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+        <div id="rules-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="toggleRules()">&times;</span>
+                <h2>Blackjack Rules</h2>
+                <p>1. The goal of blackjack is to beat the dealer's hand without going over 21.</p>
+                <p>2. Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.</p>
+                <p>3. Each player starts with two cards, one of the dealer's cards is hidden until the end.</p>
+                <p>4. To 'Hit' is to ask for another card. To 'Stand' is to hold your total and end your turn.</p>
+                <p>5. If you go over 21 you bust, and the dealer wins regardless of the dealer's hand.</p>
+                <p>6. If you are dealt 21 from the start (Ace & 10), you got a blackjack.</p>
+                <p>7. Dealer will hit until his/her cards total 17 or higher.</p>
+                <p>8. Doubling is like a hit, only the bet is doubled, and you only get one more card.</p>
+                <p>9. Split can be done when you have two of the same card - the pair is split into two hands.</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
